@@ -16,38 +16,23 @@ body{
     padding-top: 15px;
 }
 .gallery{
-
+    margin: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* deciding the number of rows and their width using grid-template-column */
+    grid-template-columns: repeat(3, 1fr); 
+    /* giving some gap between each column and rows */
     column-gap: 10px;
     row-gap: 10px;
-    justify-content: stretch;
 }
-.g0{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    width: 100%;
-}
-.g4{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width: 100%;
-}
-.g10{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 100%;
-}
+/* deciding the height of images inside the grid */
 img{
-    width:400px ;
+    width:370px ;
     height:200px ;
 }
-.gallery-item{
-    border: 0px solid #ccc;
-    margin: 0%;
-    }
 
-    .gallery-item:hover {
-        transform: scale(1.05);
-        transition: all 0.3s ease;
-    }
+/* giving the grid items some border */
+.gallery-item{
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
